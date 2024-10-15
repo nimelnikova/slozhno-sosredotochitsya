@@ -1,8 +1,30 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root .theme_light {
+  --header-color: #FFC2E6;
+  --title-color: #FF8DCB;
+  --accent-color: #353430;
+  --hover-color: rgba(50, 49, 45, .4);
+  --link-shadow: #FF8DCB;
+  --text-color: #353430;
+  --section-header-color: #353430;
+  --background-image: url(../images/cover-image-light.png);
+  --background-color: #FFF1F7;
+  --decor-visibility: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --header-color: #FFC2E6;
+    --title-color: #FF8DCB;
+    --accent-color: #353430;
+    --hover-color: #32312D;
+    --link-shadow: #FF8DCB;
+    --text-color: #353430;
+    --section-header-color: #353430;
+    --background-image: url(../images/cover-image-light.png);
+    --background-color: #FFF1F7;
+    --decor-visibility: hidden;
+  }
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
